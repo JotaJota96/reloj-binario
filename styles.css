@@ -1,0 +1,18 @@
+.led {
+    width: 100%;
+    border-style: solid;
+    background: #08B;
+}
+.led:before{
+    content: "";
+    display: block;
+    padding-top: 100%;  /* initial ratio of 1:1*/
+}
+
+
+.led-on{
+    content: "on";
+}
+.led-off{
+    content: "off";
+}
