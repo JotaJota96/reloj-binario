@@ -16,55 +16,63 @@
         <div class="row">
             <!-- inicio del reloj-->
             <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 mx-auto p-0 row bg-primary">
+                <!-- inicio columna de horas-->
                 <div class="col-4 row m-0 p-0">
                     <div class="col-6 m-0 p-0">
-                        <div class="led"></div>
-                        <div class="led"></div>
-                        <div class="led"></div>
-                        <div class="led"></div>
+                        <div id="hd8" class="led"></div>
+                        <div id="hd4" class="led"></div>
+                        <div id="hd2" class="led"></div>
+                        <div id="hd1" class="led"></div>
                     </div>
                     <div class="col-6 m-0 p-0">
-                        <div class="led"></div>
-                        <div class="led"></div>
-                        <div class="led"></div>
-                        <div class="led"></div>
+                        <div id="hu8" class="led"></div>
+                        <div id="hu4" class="led"></div>
+                        <div id="hu2" class="led"></div>
+                        <div id="hu1" class="led"></div>
                     </div>
                 </div>
+                <!-- Fin columna de horas-->
+
+                <!-- inicio columna de minutos-->
                 <div class="col-4 row m-0 p-0">
                     <div class="col-6 m-0 p-0">
-                        <div class="led"></div>
-                        <div class="led"></div>
-                        <div class="led"></div>
-                        <div class="led"></div>
+                        <div id="md8" class="led"></div>
+                        <div id="md4" class="led"></div>
+                        <div id="md2" class="led"></div>
+                        <div id="md1" class="led"></div>
                     </div>
                     <div class="col-6 m-0 p-0">
-                        <div class="led"></div>
-                        <div class="led"></div>
-                        <div class="led"></div>
-                        <div class="led"></div>
+                        <div id="mu8" class="led"></div>
+                        <div id="mu4" class="led"></div>
+                        <div id="mu2" class="led"></div>
+                        <div id="mu1" class="led"></div>
                     </div>
                 </div>
+                <!-- Fin columna de minutos-->
+
+                <!-- inicio columna de segundos-->
                 <div class="col-4 row m-0 p-0">
                     <div class="col-6 m-0 p-0">
-                        <div class="led"></div>
-                        <div class="led"></div>
-                        <div class="led"></div>
-                        <div class="led"></div>
+                        <div id="sd8" class="led"></div>
+                        <div id="sd4" class="led"></div>
+                        <div id="sd2" class="led"></div>
+                        <div id="sd1" class="led"></div>
                     </div>
                     <div class="col-6 m-0 p-0">
-                        <div class="led"></div>
-                        <div class="led"></div>
-                        <div class="led"></div>
-                        <div class="led"></div>
+                        <div id="su8" class="led"></div>
+                        <div id="su4" class="led"></div>
+                        <div id="su2" class="led"></div>
+                        <div id="su1" class="led"></div>
                     </div>
                 </div>
+                <!-- Fin columna de segundos-->
             </div>
             <!-- Fin del reloj-->
         </div>
-
+        <span id="hora-actual"></span>
     </main>
 
-
+    <script src="script.js"></script> 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
