@@ -20,6 +20,35 @@ function digitoABinario(d, bits = 4){
     }
 }
 
+/**
+ * Establece los valores en cada columna
+ * @param {string} horaCompleta Hora a mostrar (numeros concatenados sin caracteres no numericos)
+ */
+function actualizarReloj(horaCompleta){
+    // prefijos de las columnas
+    let columnas = ["hd", "hu", "md", "mu", "sd", "su"];
+    // para cada columna
+    for (let i = 0; i < columnas.length; i++){
+        // convierte el numero a mostrar a binario
+        let bits = digitoABinario(horaCompleta[i]);
+        // actualiza la columna
+        actualizarColumna(bits, columnas[i]);
+    }
+}
+
+/**
+ * Muestra un numero binario en una columna especifica
+ * @param {String} bits Numero binario a representar
+ * @param {String} columna ID de la columna
+ */
+function actualizarColumna(bits, columna){
+    let filas = ["8", "4", "2", "1"];
+    for (let i = 0; i < filas.length; i++) {
+        let idLed = columna + filas[i];
+        // aca hay que encender o apagar los leds segun los bits
+    }
+}
+
 setInterval(() => {
     // obtengo la hora actual (en formato 24hs)
     let fecha = new Date();
@@ -31,6 +60,8 @@ setInterval(() => {
     if (hh < 10) hh = "0" + hh;
     if (mm < 10) mm = "0" + mm;
     if (ss < 10) ss = "0" + ss;
+
+    actualizarReloj("" + hh + mm + ss);
 
     document.getElementById('hora-actual').textContent = hh + ":" + mm + ":" + ss;
 });
