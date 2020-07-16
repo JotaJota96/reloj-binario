@@ -42,10 +42,34 @@ function actualizarReloj(horaCompleta){
  * @param {String} columna ID de la columna
  */
 function actualizarColumna(bits, columna){
+    // subfijo de los leds
     let filas = ["8", "4", "2", "1"];
+    // para cada fila
     for (let i = 0; i < filas.length; i++) {
         let idLed = columna + filas[i];
-        // aca hay que encender o apagar los leds segun los bits
+        let encender = bits[i] == "1";
+        encenderApagarLed(idLed, encender);
+    }
+}
+
+/**
+ * Enciende o apaga un led especifico
+ * @param {String} idLed ID del led a apagar o encender
+ * @param {boolean} encender Nuevo estado del led (true = encendido)
+ */
+function encenderApagarLed(idLed, encender){
+    // obtengo el led
+    let led = document.getElementById(idLed);
+
+    // le saco las clases que lo encienden y apagan
+    led.classList.remove('led-on');
+    led.classList.remove('led-off');
+
+    // le agrego las clases que corresponden al nuevo estado
+    if (encender){
+        led.classList.add('led-on');
+    }else{
+        led.classList.add('led-off');
     }
 }
 

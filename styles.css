@@ -10,8 +10,8 @@
 }
 
 .led-on{
-    content: "on";
+    background-color: brown;
 }
 .led-off{
-    content: "off";
+    background-color: yellow;
 }
