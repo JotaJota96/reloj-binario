@@ -1,7 +1,12 @@
+body{
+    background-color: rgb(24, 24, 48) !important;
+}
+.reloj{
+    border: rgb(6, 6, 36) solid;
+}
 .led {
     width: 100%;
-    border-style: solid;
-    background: #08B;
+    border: rgb(6, 6, 36) solid;
 }
 .led:before{
     content: "";
@@ -10,8 +15,8 @@
 }
 
 .led-on{
-    background-color: brown;
+    background-image: radial-gradient(#6e6efd, #0000d4, #060641 );
 }
 .led-off{
-    background-color: yellow;
+    background-image: radial-gradient(#01016e, #060641 );
 }

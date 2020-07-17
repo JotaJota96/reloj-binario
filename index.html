@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-<body>
-    <header class="container">
+<body class="text-white">
+    <header class="container py-5">
         <h1 class="text-center">Reloj binario</h1>
     </header>
 
     <main class="container">
         <div class="row">
             <!-- inicio del reloj-->
-            <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 mx-auto p-0 row bg-primary">
+            <div class="reloj col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 mx-auto p-0 row">
                 <!-- inicio columna de horas-->
                 <div class="col-4 row m-0 p-0">
                     <div class="col-6 m-0 p-0">
@@ -69,7 +69,11 @@
             </div>
             <!-- Fin del reloj-->
         </div>
-        <span id="hora-actual"></span>
+        <div class="row my-4">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 mx-auto p-0">
+                <h3 id="hora-actual" class="text-center"></h3>
+            </div>
+        </div>
     </main>
 
     <script src="script.js"></script> 
